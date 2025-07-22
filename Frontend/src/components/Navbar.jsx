@@ -43,6 +43,12 @@ function Navbar() {
             <li>
               <Link onClick={openNav} to="/contact">Contact</Link>
             </li>
+             <li>
+              <Link onClick={openNav} to="/login">Login</Link>
+            </li>
+             <li>
+              <Link onClick={openNav} to="/register">Register</Link>
+            </li>
           </ul>
         </div>
 

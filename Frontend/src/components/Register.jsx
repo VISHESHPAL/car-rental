@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import HeroPages from "./HeroPages";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -24,11 +25,13 @@ const Register = () => {
     console.log("Registering user:", formData);
 
     // 🔁 Redirect to home
-    navigate("/");
+    navigate("/login");
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-10 px-4">
+    <>
+    <HeroPages name="Register" />
+     <div className="max-h-screen flex items-center justify-center bg-gray-50 py-10 px-4">
       <div className="w-full max-w-md bg-white rounded-xl shadow-lg p-8">
         <h2 className="text-2xl font-bold text-center text-red-600 mb-6">
           Create an Account
@@ -93,6 +96,7 @@ const Register = () => {
         </p>
       </div>
     </div>
+    </>
   );
 };
 

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import HeroPages from "./HeroPages";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -28,7 +29,10 @@ const Login = () => {
   };
 
   return (
-    <section className="flex justify-center items-center min-h-screen bg-gray-100">
+    
+   <>
+   <HeroPages name="Login" />
+    <section className="flex justify-center h-100 bg-gray-100">
       <div className="w-full max-w-md bg-white shadow-md rounded-xl p-8">
         <h2 className="text-2xl font-bold text-center text-red-600 mb-6">Login to Your Account</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -69,6 +73,7 @@ const Login = () => {
         </p>
       </div>
     </section>
+    </>
   );
 };
 
