@@ -265,8 +265,8 @@ function BookCar() {
                     </label>
                     <input
                       type="date"
-                      value={pickUp}
-                      onChange={(e) => setPickUp(e.target.value)}
+                      value={pickTime}
+                      onChange={(e) => setPickTime(e.target.value)}
                       onPaste={(e) => e.preventDefault()} // 🚫 Disable paste
                       min={new Date().toISOString().split("T")[0]}
                       className="w-full border border-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-all hover:border-gray-400"
@@ -290,8 +290,8 @@ function BookCar() {
                     </label>
                     <input
                       type="date"
-                      value={dropOff}
-                      onChange={(e) => setDropOff(e.target.value)}
+                      value={dropTime}
+                      onChange={(e) => setDropTime(e.target.value)}
                       onPaste={(e) => e.preventDefault()} // Disable paste
                       min={new Date().toISOString().split("T")[0]} //Disable past date
                       className="w-full border border-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-all hover:border-gray-400"
